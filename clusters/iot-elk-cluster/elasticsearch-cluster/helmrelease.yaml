@@ -12,7 +12,7 @@ spec:
         kind: GitRepository
         name: elasticsearch-chart
         namespace: flux-system
-  interval: 5m
+  interval: 1m
   values:
     # Elasticsearch Configuration
     elasticsearch:
