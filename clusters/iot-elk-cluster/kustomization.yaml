@@ -3,16 +3,8 @@ kind: Kustomization
 metadata:
   name: elastic-stack
   namespace: flux-system
-spec:
-  interval: 1m
-  path: ./clusters/iot-elk-cluster
-  prune: true
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
-    namespace: flux-system
-  targetNamespace: flux-system # comment
-  resources:
-    - ./clusters/iot-elk-cluster/elasticsearch-cluster     
-    - ./clusters/iot-elk-cluster/elastic-operator
-    - ./clusters/iot-elk-cluster/flux-system  
+namespace: flux-system
+resources:
+  - ./clusters/iot-elk-cluster/elasticsearch-cluster     
+  - ./clusters/iot-elk-cluster/elastic-operator
+  - ./clusters/iot-elk-cluster/flux-system
