@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path:  ./clusters/iot-elk-cluster/elastic-operator-kustomization
+  path:  ./iot-elk-cluster/elastic-operator-kustomization
   prune: true
   sourceRef:
     kind: GitRepository
@@ -19,7 +19,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path:  ./clusters/iot-elk-cluster/elasticsearch-kustomization
+  path:  ./iot-elk-cluster/elasticsearch-kustomization
   prune: true
   sourceRef:
     kind: GitRepository
